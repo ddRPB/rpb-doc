@@ -46,8 +46,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'ddRPB - RadPlanBio platform'
-copyright = u'2018, Tomas Skripcak'
-author = u'Tomas Skripcak'
+copyright = u'2019, ddRPB Team'
+author = u'ddRPB Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -149,7 +149,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'rpb-doc.tex', u'rpb-doc Documentation',
-     u'Tomas Skripcak', 'manual'),
+     u'ddRPB Team', 'manual'),
 ]
 
 
@@ -170,6 +170,6 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'rpb-doc', u'rpb-doc Documentation',
-     author, 'rpb-doc', 'One line description of project.',
+     author, 'rpb-doc', 'Radiotherapy clinical research IT infrastructure.',
      'Miscellaneous'),
 ]
