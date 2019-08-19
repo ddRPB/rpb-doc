@@ -30,7 +30,9 @@ Web server will provide Common Gateway Interface (CGI) to Conquest. This can be 
 .. code-block:: bash
 	:caption: Install apache2 web server
 
-	apt-get install install apache2
+	apt-get install apache2
+        a2enmod cgi
+        /etc/init.d/apache2 restart
 
 Conquest
 --------
@@ -61,6 +63,7 @@ Build
 .. code-block:: bash
 	:caption: Compile and install jpeg libary that is necessary to build Conquest
 
+        apt-get install build-essential
 	cd jpeg-6c
 	./configure
 	make install

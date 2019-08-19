@@ -11,12 +11,12 @@ Information about general system usage of all RPB platform components.
    
 
 User Creation
-=============
+-------------
 
 It is necessary to create two user accounts for each user. One is the main account in RPB database and the second one is linked account for the access to EDC system (OpenClinica). For internal users we try to follow the usernames already existing in active directory. The user names are case sensitive however RPB application login is automatically converting them into small cases so they should appear as case insensitive to the end user (however [[OpenClinica]] is always case sensitive).
 
 Create a new Study
-==================
+------------------
 
 Define Study in EDC
 - Unique Protocol ID: study identifier, use a code which we use to identify the study; first 8 characters (ignoring spaces) of study unique identifier will be prefixed with 'S_' used to generate Study OID
@@ -34,7 +34,7 @@ Define Study in CTMS and link it to EDC
 - Create eCRF field annotations (Administration->Studienmanagement->eCRF Field Annotations)
 
 Partner Site Creation
-=====================
+---------------------
 
 Each partner site in RPB needs to have unique identifier. If RPB is used in its full distributed form, these identifier should be synchronised between institutes who are running their own instance of RPB in order to allow transparent data exchange without conflicts. Good ideas for identifiers are shortcuts abbreviating the institute names that are also very often used as URIs which are by its nature quite stable. Changing the identifier later could be very complicated (however still doable with some effort).
 
