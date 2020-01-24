@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ddRPB - RadPlanBio platform'
+project = u'ddRPB'
 copyright = u'2020, ddRPB Team'
 author = u'ddRPB Team'
 
