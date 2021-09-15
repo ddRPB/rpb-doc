@@ -1,6 +1,6 @@
-RadPlanBio (RPB)
+Portal
 ================
-RPB-portal serves and entry point into the platform and provides integration middleware.
+RPB-portal serves and entry point into the platform and provides integration middleware. Additionally mobile component can be setup next to portal to support clinic wide collection of patient reported outcomes.
 
 ================== ======== ================== ==============
 OS                 Init     Application Server Database      

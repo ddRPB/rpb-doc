@@ -5,10 +5,12 @@ Software
    :maxdepth: 1
    :caption: Contents:
 
+   rpb
    edc
    pacs
+   lab
    pidg
-   rpb
+   hl7
    proxy
    appsrv
    dcmutils

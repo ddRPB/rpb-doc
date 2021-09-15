@@ -1,14 +1,16 @@
 Electronic Data Capture (EDC)
 =============================
 
-RPB integrates with OpenClinica (3.9) Electronic Data Capture system which is used to build eCRF forms and conduct study data.
+RPB integrates with OpenClinica (3.9) or LibreClinica (1.x) Electronic Data Capture system which is used to build eCRF forms and conduct study data.
 
-================== ======== ================== ==============
-OS                 Init     Application Server Database      
-================== ======== ================== ==============
-Debian 9 (Stretch) System V JDK 7, Tomcat 7    PostgreSQL 8.4
-                                               PostgreSQL 9.5
-================== ======== ================== ==============
+==================== ======== ================== ==============
+OS                   Init     Application Server Database      
+==================== ======== ================== ==============
+Debian 9 (Stretch)   System V JDK 7, Tomcat 7    PostgreSQL 8.4
+                                                 PostgreSQL 9.5
+Debian 11 (Bullseye) System V JDK 8, Tomcat 9    PostgreSQL 13
+==================== ======== ================== ==============
+
 
 PostgreSQL
 ----------
@@ -56,3 +58,8 @@ Designer distributable WAR file need to be deployed to Tomcat. Afterward the Des
 	allowHosts=localhost:8080, hostname.de:8080, radplanbio.partner-site.de
 
 Tomcat need to be restarted to apply these configuration changes.
+
+Enketo
+------
+
+Mobile friendly forms.

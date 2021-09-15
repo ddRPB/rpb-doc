@@ -1,4 +1,4 @@
-Pseudonym Generator (PIDG)
+Pseudonym Generator (PID)
 ===============================================================
 RPB integrates with Mainzelliste (1.6.1) to provide first class patient pseudonym generation and identity management.
 

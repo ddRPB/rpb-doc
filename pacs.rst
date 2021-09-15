@@ -1,7 +1,7 @@
 DICOM Server (PACS)
 ===================
 
-RPB integrates with script-able research PACS system - Conquest (1.4.19b) to store all documented medical imaging and treatment planning data in DICOM format.
+RPB integrates with script-able research PACS system - Conquest (1.4.19b) to store all documented medical imaging and treatment planning data in DICOM format. Optionally the Clinical Trial Processor - CTP software is used for flexible configuration of DICOM processing pipelines in particular research projects.
 
 ==================== ================= ================== =============
 OS                   Init              Application Server Database     
@@ -187,3 +187,9 @@ In order to be able to download zipped version of DICOM studies or series it is 
 .. copy conquest startup script
 .. chmod a+x /etc/init.d/conquest
 .. update-rc.d conquest defaults
+
+
+Clinical Trial Processor (CTP)
+------------------------------
+
+Default installation.
