@@ -1,13 +1,13 @@
 DICOM Server (PACS)
 ===================
 
-RPB integrates with script-able research PACS system - Conquest (1.4.17d) to store all documented medical imaging and treatment planning data in DICOM format.
+RPB integrates with script-able research PACS system - Conquest (1.4.19b) to store all documented medical imaging and treatment planning data in DICOM format.
 
-================== ======== ================== ==============
-OS                 Init     Application Server Database      
-================== ======== ================== ==============
-Debian 9 (Stretch) System V Apache             PostgreSQL 9.5
-================== ======== ================== ==============
+==================== ================= ================== =============
+OS                   Init              Application Server Database     
+==================== ================= ================== =============
+Debian 11 (Bullseye) System V/ systemd Apache             PostgreSQL 13
+==================== ================= ================== =============
 
 PostgreSQL
 ----------
@@ -37,7 +37,7 @@ Web server will provide Common Gateway Interface (CGI) to Conquest. This can be 
 Conquest
 --------
 
-Download Conquest sources (conquest-14-17d) from official web site.
+Download Conquest sources (conquest-14-19b) from official web site.
 
 Build
 ^^^^^
@@ -45,20 +45,20 @@ Build
 .. code-block:: bash
 	:caption: Create DICOM Server folder
 
-	mkdir /opt/conquest-14-17d
-	cd /opt/conquest-14-17d
+	mkdir /opt/conquest-14-19b
+	cd /opt/conquest-14-19b
 
 .. code-block:: bash
 	:caption: Create a user and group which will run Conquest as a service
 
 	groupadd conquest
-	useradd -g conquest -d /opt/conquest-14-17 conquest
+	useradd -g conquest -d /opt/conquest-14-19b conquest
 	useradd conquest-import
 	passwd conquest
 	vi /etc/passwd change /bin/sh conquest user to /bin/false
-	chown -R conquest:conquest /opt/conquest-14-17
-	chown -R conquest-import:conquest /opt/conquest-14-17/data/incoming
-	chmod g+w /opt/conquest-14-17/data/incomming
+	chown -R conquest:conquest /opt/conquest-14-19b
+	chown -R conquest-import:conquest /opt/conquest-14-19b/data/incoming
+	chmod g+w /opt/conquest-14-19b/data/incomming
 
 .. code-block:: bash
 	:caption: Compile and install jpeg libary that is necessary to build Conquest
@@ -114,7 +114,7 @@ Instalation
 Configuration
 ^^^^^^^^^^^^^
 
-DICOM server configuraton (/opt/conquest-14-17d/dicom.ini)
+DICOM server configuraton (/opt/conquest-14-19b/dicom.ini)
 
 .. code-block:: bash
 	:caption: DICOM server application entity (AE) title
@@ -145,10 +145,10 @@ CGI DICOM server configuration (/usr/lib/cgi-bin/dicom.ini)
 	MyACRNema = RPBPacs1
 	TCPPort = 5678
 
-	ACRNemaMap = /opt/conquest-14-17d/acrnema.map
-	kFactorFile = /opt/conquest-14-17d/dicom.sql
-	SOPClassList = /opt/conquest-14-17d/dgatesop.lst
-	Dictionary = /opt/conquest-14-17d/dgate.dic
+	ACRNemaMap = /opt/conquest-14-19b/acrnema.map
+	kFactorFile = /opt/conquest-14-19b/dicom.sql
+	SOPClassList = /opt/conquest-14-19b/dgatesop.lst
+	Dictionary = /opt/conquest-14-19b/dgate.dic
 
 	WebScriptAddress = http://<server_address>/cgi-bin/dgate
 
@@ -158,12 +158,12 @@ Start Conquest DICOM Server
 .. code-block:: bash
 	:caption: Initialise or regenerate database
 
-	/opt/conquest-14-17d/dgate -v -r
+	/opt/conquest-14-19b/dgate -v -r
 
 .. code-block:: bash
 	:caption: Start DICOM server
 
-	/opt/conquest-14-17d/dgate -v &
+	/opt/conquest-14-19b/dgate -v &
 
 Downloading DICOM studies/series
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -177,13 +177,13 @@ In order to be able to download zipped version of DICOM studies or series it is 
 .. code-block:: bash
 	:caption: Get rid of error messages spamming the Conquest logs (create empty file)
 
-	vi /opt/conquest-14-17d/zip.cq
+	vi /opt/conquest-14-19b/zip.cq
 
 .. Fixes:
 .. Startup script
 .. Note: export PGCLIENTENCODING=LATIN1 should be set before runnig conquest in script (even if database is UTF8 encoded, otherwise conquest crashes)
 
-.. conquest home: /opt/conqest-14-17
+.. conquest home: /opt/conqest-14-19b
 .. copy conquest startup script
 .. chmod a+x /etc/init.d/conquest
 .. update-rc.d conquest defaults
