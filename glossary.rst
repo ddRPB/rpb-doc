@@ -13,6 +13,8 @@ Glossary
 
 **PACS:** a picture archiving and communication system for storage of DICOM data.
 
+**LAB:** laboratory data management system with file repository and tabular data storage.
+
 **Partner Site:** institute which join a study as a site location.
 
 **Person:** human entity that is involved in the clinical research process with specific role or is participating as subject in specific trial.

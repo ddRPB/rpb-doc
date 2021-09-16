@@ -1,8 +1,8 @@
-Create a new Study
-==================
+Study Management
+================
 
 Define Study in EDC
-- Unique Protocol ID: study identifier, use a code which we use to identify the study; first 8 characters (ignoring spaces) of study unique identifier will be prefixed with 'S_' used to generate Study OID
+- Unique Protocol ID: study identifier, use a code which we use to identify the study; first 8 characters (ignoring spaces) of study unique identifier will be prefixed with 'S\_' used to generate Study OID
 - Site Unique Protocol ID: site study identifier, use RPB partner site unique identifier as prefix: e.g 'DD-' + parent study Unique Protocol ID
 - Define a short (2 character), unique trial EDC code (e.g. 'AA', 'XN') and store it as first element in Secondary IDs field, this code is used in RPB naming conventions; optionally use small 'r' or 'p' to denote retrospective or prospective basis of the study in the code (e.g. 'HNp', 'HNr'); check the availability of the code in CTMS
 - Create CRFs (at least one [[FormDefinition]] need to be specified), use RPB naming conventions

@@ -1,7 +1,7 @@
-ddRPB Reference Documentation
-=============================
+RPB Reference Documentation
+===========================
 
-Welcome to the ddRPB platform documentation! This resource contains a public reference information, including a :ref:`Glossary` for quick access to definitions of terms used across RPB platform and it's components. 
+Welcome to the RPB platform documentation! This resource contains a public reference information, including a :ref:`Glossary` for quick access to definitions of terms used across RPB platform and it's components. 
 
 .. toctree::
    :maxdepth: 1

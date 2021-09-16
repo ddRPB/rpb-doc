@@ -1,5 +1,5 @@
-Partner Site Creation
-=====================
+Partner Sites
+=============
 
 Each partner site in RPB needs to have unique identifier. If RPB is used in its full distributed form, these identifier should be synchronised between institutes who are running their own instance of RPB in order to allow transparent data exchange without conflicts. Good ideas for identifiers are shortcuts abbreviating the institute names that are also very often used as URIs which are by its nature quite stable. Changing the identifier later could be very complicated (however still doable with some effort).
 
