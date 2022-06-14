@@ -9,4 +9,5 @@ Information about general system administration of all RPB platform components.
 
    hardware
    software
+   monitoring/health
    
