@@ -5,7 +5,7 @@ The platform components are standalone systems that expose the API for the purpo
 are actively used and failure of one or more of APIs will result in partial or complete breakage of the platform functionality.
 These types of interfaces are important for the correct operation of the platform:
 
-- Web Services (e.g. REST, SOAP, WebDAV, DICOM web)
+- Web Services (e.g. REST, SOAP, WebDAV, DICOMweb)
 - DICOM Communication
 - HL7 Communication
 - LDAP/ LDAPs
@@ -35,10 +35,37 @@ Login: return JSON of logged in user if success
 
 .. code-block:: bash
 
-    wget -d --header="Content-Type: application/json" --header="Username: rpbuser" --header="Password: sha1passwordhash" radplanbio.url.de/serveriePartnerSiteIdentifier/api/v1/getMyDefaultAccount/
+    wget -d --header="Content-Type: application/json" --header="Username: rpbuser" --header="Password: sha1passwordhash" https://radplanbio.url.de/serveriePartnerSiteIdentifier/api/v1/getMyDefaultAccount/
 
 Portal
 ^^^^^^
+
+Hello: testing the reachability to the portal API endpoint
+
+.. code-block:: bash
+
+    wget -d https://radplanbio.url.de/api/hello/ping
+
+RSS: RSS/atom stream of the portal
+
+.. code-block:: bash
+    :caption: Retrieving portal RSS stream
+
+     wget -d --header="Content-Type: application/rss+xml; charset=utf-8;" https://radplanbio.url.de/api/rss
+
+WebDAV: WebDAV interface
+
+.. code-block:: bash
+    :caption: Listing study folders
+
+     davix-ls https://radplanbio.url.de/api/v1/webdav/studies --userlogin rpbapikey --userpass anything
+
+DICOMweb: DICOMweb interface
+
+.. code-block:: bash
+    :caption: Storing DICOM instances into research PACS (STOW-RS), clinical trial agnostic
+
+     https://radplanbio.url.de/api/v1/dicomweb/studies
 
 OpenClinica/ LibreClinica
 ^^^^^^^^^^^^^^^^^^^^^^^^^
