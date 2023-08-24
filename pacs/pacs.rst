@@ -6,6 +6,7 @@ The Medical Imaging (PACS) module is available only to users with ROLE_PACS_USER
 Concept
 -------
 
+
 To fullfill the specific requirements for using Medical Images in research, RadPlanBio has a concept of three states.
 
 .. image:: ../img/pacs/image_data_states.png
@@ -21,6 +22,6 @@ That procedure ensures to fullfill the all regulations and allows user whithout 
 Tasks
 -----
 
-- Transfer DICOM data from the hospital system to Study0
+- `Transfer DICOM data from the hospital system to Study0 <hospital-data-to-study-zero-task.rst>`_
 - Transfer DICOM data from Study0 to the project specific state
 - Assign DICOM data to a specific event
