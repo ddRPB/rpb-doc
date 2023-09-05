@@ -1,7 +1,7 @@
 Glossary
 ========
 
-**Component:** one specific software system (such as EDC or PACS) that is integrated into the RPB platform.
+**Component:** one specific software system (such as EDC, PACS or LAB) that is integrated into the RPB platform.
 
 **DICOM:** digital imaging and communications in medicine standard used for representation of medical images.
 

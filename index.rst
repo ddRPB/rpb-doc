@@ -7,6 +7,7 @@ Welcome to the RPB platform documentation! This resource contains a public refer
    :maxdepth: 1
    :caption: Contents:
 
+   introduction
    user
    administrator
    developer
