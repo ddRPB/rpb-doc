@@ -1,5 +1,8 @@
-Stage DICOM Data from the Clinical System to the Pseudonymized State (Study 0)
-==============================================================================
+Create Project Agnostic DICOM
+=============================
+
+.. note::
+    Users with access to Study0 are allowed to create a project agnostic copy of clinical DICOM study.
 
 Task Description
 ----------------

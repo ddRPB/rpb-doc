@@ -1,7 +1,7 @@
 User Documentation
 ==================
 
-Information about general system usage of all RPB platform components.
+Information about general system usage of all RPB platform components and applications.
 
 .. toctree::
 	:maxdepth: 1
