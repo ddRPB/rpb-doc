@@ -92,7 +92,7 @@ if not on_rtd:
   html_theme = 'sphinx_rtd_theme'
   html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 else:
-  html_theme = 'spinx_rtd_theme'
+  html_theme = 'sphinx_rtd_theme'
 
 numfig = True
 
