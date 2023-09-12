@@ -12,4 +12,3 @@ The Administration module is available only to users with ROLE_ADMIN permission.
    account
    partnersite
    study
-
