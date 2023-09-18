@@ -5,6 +5,14 @@ Glossary
 
 **Annotation:** semantic annotation giving a fixed meaning to specific eCRF item.
 
+**BIO:** study tag assigned to study collecting biospecimens withing biobank.
+
+**BIO-code:** project code assigned to study within biobank.
+
+**CCP:** study tag assigned to study using CCP project specific pseudonymisation.
+
+**CCP-code:** unique CCP trial registry code.
+
 **Clinical Stage:** refers to identifiable DICOM data in clinical PACS archives.
 
 **Component:** one specific software system (such as EDC, PACS or LAB) that is integrated into the RPB platform.
@@ -13,9 +21,11 @@ Glossary
 
 **CTMS:** clinical trial management system.
 
-**DICOM:** digital imaging and communications in medicine standard used for representation of medical images.
+**DICOM:** study tag assigned to study collecting medical imaging or treatment planning data.
 
 **DICOM-RT:** radiotherapy specific extension of DICOM standard used for representation of radiotherapy specific entities such as plan, structure sets and dose files.
+
+**DKTK:** study tag assigned to study with DKTK informed consent.
 
 **Dummy-run:** process of site qualification for particular clinical trial.
 
@@ -26,6 +36,8 @@ Glossary
 **EDC-code:** unique code assigned as study tag to every study configured to use EDC component.
 
 **ePRO:** electronic patient reported outcomes.
+
+**IDAT:** study tag assigned to study when site patient pseudonyms are derived from identifiable data.
 
 **Mobile:** table friendly component to collect electronic patient reported outcomes.
 
