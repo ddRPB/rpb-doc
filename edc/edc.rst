@@ -3,8 +3,8 @@ Electronic Data Capture
 
 .. note::
 	The Electronic Data Capture (EDC) module is available only to users with ROLE_EDC_USER permission. The accessible
-	studies need to be configured to use EDC component and linked EDC study (EDC-code study tag set to study unique code
-	within the CTMS module).
+	studies need to be configured to use EDC component and linked with EDC studies (EDC-code study tag set to study
+	unique code within the CTMS module).
 
 Concept
 -------
@@ -27,8 +27,24 @@ Subjects/Events/CRFs
 	ROLE_EDC_USER permission is needed to access this view. It does not currently operate within the scope of currently
 	active study/site, but allows users to quickly switch between project without changing active study.
 
+The project structure of EDC studies defined in RPB platform is limited to two levels. The top parent study level
+holds all subjects enrolled in particular research project, whereas the second site level is limited to patients that
+e.g. originates for one concrete partner site in the scope of multi-centre trial or are of specific characteristics such
+as treated tumour entity within the scope of mono-centre trial. Even pure mono-centre trials usually have one site defined
+that contains all study subjects. The project rights permissions in RPB components allows users to defined access based on
+these two level hierarchy.
+
+.. note::
+	Additionally abstract sites such as DELETED and DUMMY are sometimes also used to control visibility of patients in the
+	project and logically separate the access to the data.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Tasks:
+
+   change-study-site
+
 View study/site configuration
-Change active study/site
 Display enrolled subjects
 Register new study subject
 Re-identify study subject
