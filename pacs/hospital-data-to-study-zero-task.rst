@@ -13,14 +13,14 @@ Therefore:
 
 - you need to select the data that are necessary
 - trigger the staging step
-- review the tranfered and pseudonymized data
+- review the transfered and pseudonymized data
 
 Prerequisits
 ------------
 
 - your site is fully integrated in the RPB Infrastructure (otherwise see "Uploadclient")
 - you have permissions to query the hospital PACS system
-- you have acces to "Study0" in RadPlanBio
+- you have access to "Study0" in RadPlanBio
 
 Tasks
 -----
@@ -33,7 +33,7 @@ Tasks
 6. Verify that staging is finished
 
 Preparation
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
 
 It is important to verify that "Study0" is active to get access to the patients of the hospital system. If you are in a different Study read `here <../overview/overview.rst#change-a-current-active-study>`_ how to change that.
 
@@ -46,14 +46,14 @@ In the menu, navigate to "PACS - medical imaging" -> "DICOM Lookup".
 Select the Patient
 ^^^^^^^^^^^^^^^^^^
 
-There are three options to find the patient.
+There are some options to find the patient.
 
 "Select One" is a combobox that allows to limit the items by entering search terms. It will search for the entered character combinations in the PID or StudySubjectID. The combobox shows up to 10 items. Clicking on an item selects the patient.
 
 .. image:: ../img/pacs/select-patient-from-autocomplete.png
    :width: 600pt
 
-"Bulk Search" is intended for the case that you have a comma separated list of ID (like: "DummmyId01, DummyId02") that you just paste into the text box. Patients that match will be presented in the table. It would also work with parts of the ids as searchterm, like "yId01,yId02".
+"Bulk Search" is intended for the case that you have a comma separated list of identifiers (like: "DummmyId01, DummyId02") that you just paste into the text box. Patients that match will be presented in the table. It would also work with parts of the ids as searchterm, like "yId01,yId02".
 
 .. image:: ../img/pacs/bulk-search.png
    :width: 800pt
