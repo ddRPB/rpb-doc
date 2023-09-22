@@ -42,7 +42,6 @@ In the menu, navigate to "PACS - medical imaging" -> "DICOM Lookup".
 .. image:: ../img/pacs/prepare-dicomLookup-study-0.png
    :width: 900pt
 
-
 Select the Patient
 ^^^^^^^^^^^^^^^^^^
 
