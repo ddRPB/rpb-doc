@@ -23,8 +23,8 @@ RPB platform instance. It allows to de-identify any clinically archived DICOM st
 as project specify copy of the data with highly customisable de-identification rules. Such data does not necessary need
 to be associated with specific study event (association with study time-points is completely optional in this case).
 
-DICOM Upload to Study Event
----------------------------
+DICOM Upload and Regististration on a Study Event
+-------------------------------------------------
 
 .. note::
     The ROLE_PACS_USER permission is needed to access this module workflow and upload is available only to users with
