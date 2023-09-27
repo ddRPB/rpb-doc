@@ -1,7 +1,7 @@
 View Study/Site Configuration
 =============================
 
-1. In order to see the EDC study/site configuration you need to navigate to EDC *Subject/Events/CRFs* via left menu
+1. In order to see the EDC study/site configuration you need to navigate to EDC *Subjects/Events/CRFs* via left menu
 as depicted in :numref:`img-edc-view-study-configuration`.
 
 2. This will bring you to the overview of all available EDC studies where you can browse and select the project from *parent

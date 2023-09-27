@@ -1,7 +1,7 @@
 Change Active Study/Site
 =========================
 
-1. In order to change the currently active study/site you need to navigate to EDC *Subject/Events/CRFs* via left menu or
+1. In order to change the currently active study/site you need to navigate to EDC *Subjects/Events/CRFs* via left menu or
 click on click on Change *Study/Site* link in top left menu as depicted in :numref:`img-edc-change-active-study`.
 
 2. This will bring you to the overview of all available EDC studies where you can browse and select the project from *parent

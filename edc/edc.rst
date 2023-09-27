@@ -10,7 +10,8 @@ Concept
 
 This module provides a web user interface to access the EDC system component integrated in RPB platform,
 see :numref:`img-left-menu-edc`. The main functionality allows browsing studies/sites defined in EDC system and
-enrolling new subjects using study specific pseudonymisation strategy.
+enrolling new subjects using study specific pseudonymisation strategy. It brings the study centric view on subjects
+enrolled within a projects.
 
 .. figure:: /img/edc/left-menu-edc.png
 	:name: img-left-menu-edc
@@ -84,9 +85,11 @@ provide and study subjects enrollment overview, :numref:`img-edc-subjects`.
 	:maxdepth: 1
 	:caption: Tasks:
 
+	visualise-enrollment
 	subject-ids
 	enroll-subjects
 	reidentify-subject
+	subject-centric
 
 Events
 ^^^^^^
@@ -122,6 +125,18 @@ Randomisation
 
 Randomise Study Subjects
 Visualise Arm Assignments
+
+Study Data Import
+-----------------
+
+.. note::
+	ROLE_IMPORT permission is needed to allow bulk import of data into EDC system. This view operates within the scope of
+	currently active study/site.
+
+Bulk Pseudonymisation
+Bulk Enrollment
+Bulk Event Schedule
+Bulk Data Import
 
 Study Metadata
 --------------
