@@ -57,13 +57,14 @@ allows users to defined access based on these two level hierarchy.
 	EDC module study/sites hierarchy.
 
 .. note::
-	Additional abstract sites such as DELETED and DUMMY are often used to control visibility of patients in the
+	Additional abstract sites such as DROPOUT, DELETED and DUMMY are often used to control visibility of subjects in the
 	project and logically separate the access to the data.
 
 .. toctree::
 	:maxdepth: 1
 	:caption: Tasks:
 
+	partner-site-identifiers
 	view-study-configuration
 	change-study-site
 
@@ -83,6 +84,7 @@ provide and study subjects enrollment overview, :numref:`img-edc-subjects`.
 	:maxdepth: 1
 	:caption: Tasks:
 
+	subject-ids
 	enroll-subjects
 	reidentify-subject
 

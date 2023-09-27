@@ -1,7 +1,11 @@
 Administration
 ==============
 
-The Administration module is available only to users with ROLE_ADMIN permission.
+.. note::
+	The Administration module is available only to users with ROLE_ADMIN permission.
+
+Concept
+-------
 
 .. image:: /img/administration/admin.png
 

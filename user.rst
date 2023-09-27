@@ -10,6 +10,7 @@ Information about general system usage of all RPB platform components.
 	overview/overview
 	ctms/ctms
 	edc/edc
+	epro/epro
 	pacs/pacs
 	lab/lab
 	pid/pid
