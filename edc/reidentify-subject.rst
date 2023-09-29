@@ -4,7 +4,18 @@ Re-identify Study Subject
 .. note::
 	ROLE_REIDENTIFY permission is needed to allow subject re-identification.
 
-if RPB PID generator was used to pseudonymise the participating subject it is possible to re-identify the subject
-given the user has the necessary rights.
+When RPB PID generator was used to pseudonymise the subject enrolled in specific study site, the users of that specific
+partner site can re-identify the subject. This simple workflow is accessible from the *Subjects* tab of *Subjects/Events/CRFs* view,
+see :numref:`img-edc-subject-reidentify`:
 
-Once the patient is successfully registered and enrolled into the study it is easy to get get back his identity details when necessary (according to PID), see Fig. 8. The identity information stored in patient identity management system is retrieved when the user click on Reidentify button.
+1.	Clicking *Edit* button in *Subjects* data table will display the *Edit Dialog*.
+
+2. 	If proper PID was used and necessary user permissions are granted the *Reidentify* button is enabled and can be triggered.
+
+3.	Subject identity gets loaded from identity management database (this action creates and audit log entry).
+
+.. figure:: /img/edc/edc-subject-reidentify.png
+	:name: img-edc-subject-reidentify
+	:alt: Reidentify pseudonymised subject enrolled in specific study site.
+
+	Reidentify pseudonymised subject enrolled in specific study site.
