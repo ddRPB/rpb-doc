@@ -1,5 +1,5 @@
 DICOM Upload and Regististration on a Study Event
-===============================================
+=================================================
 
 Task Description
 ----------------
